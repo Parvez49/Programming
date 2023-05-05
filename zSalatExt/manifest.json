@@ -1,0 +1,12 @@
+{
+  "name": "Local Time",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Displays the local time in the extension popup",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "*://*/*"
+  ]
+}
