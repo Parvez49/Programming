@@ -1,0 +1,32 @@
+
+
+
+
+
+### Firstly install mysql (pip instal mysqlclient)
+mysql --version
+sudo mysql_secure_installation
+
+
+pip install mysql
+pip install mysql-connector-python
+pip install mysql-connector
+
+###setting.py:
+  DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+}  to
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": 'dp',
+        "USER":  'root',
+        'PASSWORD': 'password789'
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
+

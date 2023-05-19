@@ -1,0 +1,14 @@
+import django
+
+import mysql.connector
+
+database=mysql.connector.connect(
+    host='localhost',
+    user='root',
+    password='password789'
+)
+
+cursorObject=database.cursor()
+cursorObject.execute("DROP DATABASE sample")
+
+print("All done")
