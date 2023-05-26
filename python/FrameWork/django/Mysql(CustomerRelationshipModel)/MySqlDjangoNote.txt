@@ -5,12 +5,19 @@
 
 ### Firstly install mysql (pip instal mysqlclient)
 mysql --version
+sudo dnf install mysql-server
+sudo systemctl start "mysqld"  fedora uses mariadb.service instead of mysqld
+sudo systemctl enable mysqld
 sudo mysql_secure_installation
+mysql -u root -p OR sudo mysql
+
+
 
 
 pip install mysql
 pip install mysql-connector-python
 pip install mysql-connector
+
 
 ###setting.py:
   DATABASES = {
@@ -22,7 +29,7 @@ pip install mysql-connector
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": 'dp',
+        "NAME": 'db',
         "USER":  'root',
         'PASSWORD': 'password789'
         'HOST': 'localhost',

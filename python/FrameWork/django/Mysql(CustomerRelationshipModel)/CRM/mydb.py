@@ -9,6 +9,6 @@ database=mysql.connector.connect(
 )
 
 cursorObject=database.cursor()
-cursorObject.execute("DROP DATABASE sample")
+cursorObject.execute("CREATE DATABASE db")
 
 print("All done")

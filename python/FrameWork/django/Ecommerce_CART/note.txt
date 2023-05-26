@@ -1,0 +1,7 @@
+
+
+django visual studio code extension
+django
+django template
+prettier --> code formatter
+cobalt2 --> theme
