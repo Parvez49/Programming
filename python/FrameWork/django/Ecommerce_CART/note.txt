@@ -5,3 +5,5 @@ django
 django template
 prettier --> code formatter
 cobalt2 --> theme
+
+pip install pillow # image working
